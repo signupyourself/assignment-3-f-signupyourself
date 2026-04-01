@@ -1,4 +1,4 @@
 all:
-	$(CC) $(CFLAGS) server.c -o server
+        $(CC) $(CFLAGS) server.c -o server
 clean:
-    rm -rf server
+        rm -rf server
