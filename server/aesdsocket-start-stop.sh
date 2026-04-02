@@ -3,7 +3,7 @@
 case "$1" in
  start)
 	echo "Starting socketserver"
-	start-stop-daemon -S -n socketserver -a /bin/socketserver
+	start-stop-daemon -n socketserver -a /bin/socketserver -S -- -d
 	;;
  stop)
 	echo "Stopping socketserver"
